@@ -636,6 +636,35 @@ header {
 
             .command {
                 font-family: var(--bs-font-monospace);
+<<<<<<< HEAD
+=======
+                font-weight: $fw_regular;
+                @extend code;
+            }
+
+            dl.py, dl.js, dl.o-definition-list {
+                > dd {
+                    border-left: 3px solid $gray-lighter;
+                    margin: 0;
+                    padding-left: $padding-s;
+                    padding-top: $padding-xs;
+                }
+                &.class em.property {
+                    font-size: $font-size-secondary;
+                    &:first-child {
+                        border-bottom: 3px solid $gray-lighter;
+                        + [class^=sig] {
+                            padding-left: .3rem;
+                        }
+                    }
+                    &:not(:first-child) {
+                        @extend code;
+                        &:last-of-type {
+                            padding-right: .3rem;
+                        }
+                    }
+                }
+>>>>>>> 11ae17cf... temp
             }
 
             dl.field-list {
